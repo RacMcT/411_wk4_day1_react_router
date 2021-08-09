@@ -1,9 +1,8 @@
 import React from 'react'
 import cars from '../cars.json'
-import {useParams} from "react-router";
-import {makeStyles} from "@material-ui/core";
-
-import {Container, Paper, Chip} from "@material-ui/core";
+import { useParams } from "react-router";
+import { makeStyles } from "@material-ui/core";
+import { Container, Paper, Chip } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -39,8 +38,8 @@ const Car = (props) => {
                     <Chip size="medium" label={`id: ${result.Origin}`} />
                 </Container>
             </Paper>
-            </Container>
-)
+        </Container>
+    )
 }
 
 export default Car
